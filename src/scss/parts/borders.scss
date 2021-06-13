@@ -1,0 +1,126 @@
+.borders{
+	padding-top: 44px;
+	padding-bottom: 44px;
+}
+.second{
+	width: 200px;
+	height: 85px;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0;
+	position: relative;
+	background-color: navajowhite;
+	margin-left: auto;
+	margin-right: auto;
+}
+.second__stub{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.second:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: orange;
+}
+.second:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2px;
+	background-color: orange;
+}
+.second__stub:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 2px;
+	background-color: orange;	
+}
+.second__stub:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background-color: orange;
+}
+
+.second.live:before{
+	animation: liveborder;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.second.live:after{
+	animation: liveborder;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.second.livebackward:before{
+	animation: liveborderback;
+	animation-duration: 1s;
+}
+
+.second.livebackward:after{
+	animation: liveborderback;
+	animation-duration: 1s;
+}
+
+.second.live .second__stub:before{
+	animation: liveborder2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.second.live .second__stub:after{
+	animation: liveborder2;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;	
+}
+.second.livebackward .second__stub:before{
+	animation: liveborder2back;
+	animation-duration: 1s;
+}
+.second.livebackward .second__stub:after{
+	animation: liveborder2back;
+	animation-duration: 1s;	
+}
+@keyframes liveborder{
+	from{
+		height: 0%;
+	}
+	to{
+		height: 100%;
+	}
+}
+@keyframes liveborderback{
+	from{
+		height: 100%;
+	}
+	to{
+		height: 0%;
+	}
+}
+@keyframes liveborder2{
+	from{
+		width: 0%;
+	}
+	to{
+		width: 100%;
+	}
+}
+@keyframes liveborder2back{
+	from{
+		width: 100%;
+	}
+	to{
+		width: 0%;
+	}
+}

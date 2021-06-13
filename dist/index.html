@@ -18,26 +18,38 @@
 
 <body>
 	<div class="wrapper">
-		<div>
-    <h1>This a Header</h1>
-    <i class="icon-phone" style="color: red;font-size:18px"></i>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-</div>
-		<main class="page">
+		<section class="clips">
+    <h4>наведите курсор на одну из половин</h4>
+    <div class="clips__container">
+        <div class="clips__item clips__item--left">
+            
+        </div>
+        <div class="clips__item clips__item--right">
 
-		</main>
-		<p>Footer</p>
+        </div>
+    </div>
+</section>
+		<section class="rolling">
+    <h4>запускайте и останавливайте анимацию</h4>
+    <div class="rolling__btns">
+        <button class="rolling__btn" id="start_rolling">старт</button>
+        <button class="rolling__btn" id="stop_rolling">стоп</button>
+    </div>
+    <div class="rolling__container">
+        <div class="rolldiv roll paused"></div>
+    </div>
+</section>
+		<section class="borders">
+    <div class="second">
+        <div class="second__stub"></div>
+        наведите курсор
+    </div>
+</section>
+		<section class="polygons">
+    <div class="polygon">
+        наведите курсор
+    </div>
+</section>
 	</div>
 	<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
 	<!-- <script src="libs/animate/animate-css.js"></script> -->

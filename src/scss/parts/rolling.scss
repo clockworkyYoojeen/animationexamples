@@ -1,0 +1,60 @@
+.rolling{
+    padding-top: 85px;
+    padding-bottom: 55px;
+    min-height: 280px;
+	text-align: center;
+}
+.rolling__btns{
+    text-align: center;
+	margin-top: 34px;
+    margin-bottom: 66px;
+}
+.rolling__btn{
+    background-color:navajowhite;
+    padding: 7px 55px;
+    border: none;
+    border-radius: 4px;
+    // box-shadow: 2px 2px 2px #ffe87f, -2px -2px 2px #ffe87f;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.rolling__container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rolldiv{
+	width: 88px;
+	height: 88px;
+	position: relative;
+	left: 0px;
+	border-radius: 16px;
+	background-color: navajowhite;
+}
+.roll{
+	animation-name: roll;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+.roll.paused{
+	animation-play-state: paused;
+}
+.roll.running{
+	animation-play-state: running;
+}
+
+@keyframes roll{
+	0%{
+		left: 0px;
+		opacity: 1;
+		transform: rotate(0deg)
+	}
+	100%{
+		left: 500px;
+		opacity: 0;
+		transform: rotate(1080deg);
+		width: 15px;
+		height: 15px;
+	}
+}

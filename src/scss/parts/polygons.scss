@@ -1,0 +1,19 @@
+.polygons{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.polygon{
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: navajowhite;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: all .5s;
+}
+.polygon:hover{
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+}

@@ -1,0 +1,38 @@
+.clips{
+    height: 70vh;
+    text-align: center;
+    padding-top: 55px;
+}
+.clips__container{
+    position: relative;
+    width: 70%;
+    height: 80%;
+    box-shadow: 2px 2px 3px #ffe87f, -2px -2px 3px #ffe87f;
+    border-radius: 6px;
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clips__item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+.clips__item--left{
+    background: url('img/forest1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.clips__item--right{
+    background: url('img/forest2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+}
+.clips__item--right:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.clips__item--left:hover ~ .clips__item--right {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}

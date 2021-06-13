@@ -5,3 +5,10 @@
 		url('../fonts/RalewayBold/RalewayBold.ttf') format('truetype');
 	font-style: normal;
 }
+@font-face {
+	font-family: 'CL';
+	src:url('../fonts/CleanvertisingLight/CleanvertisingLight.eot') format('eot'),
+		url('../fonts/CleanvertisingLight/CleanvertisingLight.woff') format('woff'),
+		url('../fonts/CleanvertisingLight/CleanvertisingLight.ttf') format('truetype');
+	font-style: normal;
+}
