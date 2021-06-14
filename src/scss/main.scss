@@ -5,5 +5,14 @@ body{
 h4{
     color: #fff;
     font-size: 33px;
+    transition: all .4s;
+}
+h4.animated{
+    transform: translateY(100%);
+    opacity: 0;
+}
+.animated.show{
+    transform:translateY(0);
+    opacity: 1;
 }
 

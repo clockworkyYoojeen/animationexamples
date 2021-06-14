@@ -25,7 +25,7 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 2px;
+	width: 4px;
 	background-color: orange;
 }
 .second:after{
@@ -33,7 +33,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 2px;
+	width: 4px;
 	background-color: orange;
 }
 .second__stub:before{
@@ -41,7 +41,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 2px;
+	height: 4px;
 	background-color: orange;	
 }
 .second__stub:after{
@@ -49,7 +49,7 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	height: 2px;
+	height: 4px;
 	background-color: orange;
 }
 
